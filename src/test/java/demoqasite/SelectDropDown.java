@@ -46,13 +46,17 @@ public class SelectDropDown {
 	
 	WebElement colourName = driver.findElement(By.xpath("//*[@id='oldSelectMenu']/option[6]"));		// Finding the title of the drop down page = "Dropdown List"
 	String colourBlack = colourName.getText();
-	System.out.println("Colour from Dropdown " + colourBlack);
+	
 	Select dd = new Select(oldStyleSelect);
 	
 	dd.selectByValue("5");
 	
 	Assert.assertEquals(colourBlack, "Black");						// Actual, Expected
-	System.out.println("Drop Down item selected is " + colourBlack);	
+	System.out.println("Drop Down item selected by Value 5 is " + colourBlack);
+	
+	dd.selectByIndex(6);
+	System.out.println(colourName.getText());
+	
 	
 	}
 	
