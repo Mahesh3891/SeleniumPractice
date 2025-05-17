@@ -17,7 +17,7 @@ public class FormAuthentication {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		driver.get("https://the-internet.herokuapp.com/");
+		driver.navigate().to("https://the-internet.herokuapp.com/");
 		
 		driver.findElement(By.xpath("//*[@id='content']/ul/li[21]/a")).click();
 		
