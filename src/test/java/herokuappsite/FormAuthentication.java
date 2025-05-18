@@ -36,14 +36,15 @@ public class FormAuthentication {
 		driver.findElement(By.xpath("//*[@id='login']/button/i")).click();
 		System.out.println("Login Successful");
 		
-		//Alert alert = driver.switchTo().alert();
-		//alert.dismiss();
 		
-		//String popText = driver.findElement(By.xpath("//*[@id='flash']")).getText();				
-		String popText = driver.findElement(By.id("flash")).getText();					// ********** Facing issue at this point **********
-		System.out.println(popText);
-		Assert.assertEquals(popText, "You logged into a secure area!");					//(Actual,Expected)
+		//Test
+		WebElement message = driver.findElement(By.xpath("//div[contains(@class, 'flash success') and contains(text(), 'You logged into a secure area!')]"));
+        System.out.println("Message: " + message.getText());
 		
+		//String message = driver.findElement(By.id("flash")).getText();					// ********** Facing issue at this point **********
+		//System.out.println(message);
+		//Assert.assertEquals(message.getText(), "You logged into a secure area!");					//(Actual,Expected)
+						
 		driver.quit();
 	}
 	
