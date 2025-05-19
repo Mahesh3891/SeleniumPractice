@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="herokuappsite.FormAuthentication">
+      <class name="practiceswtesting.HammerTestCase">
         <methods>
-          <include name="testAuth"/>
+          <include name="testHammerDetails"/>
         </methods>
-      </class> <!-- herokuappsite.FormAuthentication -->
+      </class> <!-- practiceswtesting.HammerTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
