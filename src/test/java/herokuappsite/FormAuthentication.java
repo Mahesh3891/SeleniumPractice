@@ -36,16 +36,9 @@ public class FormAuthentication {
 		driver.findElement(By.xpath("//*[@id='login']/button/i")).click();
 		System.out.println("Login Successful");
 		
-		driver.manage().deleteAllCookies();				
-		//Test
-		WebElement message = driver.findElement(By.xpath("//div[contains(@class, 'flash success') and contains(text(), 'You logged into a secure area!')]"));
-		//	String message = driver.findElement(By.xpath("//*[text() = 'You logged into a secure area!']")).getText();
-		//System.out.println("Message: " + message.getText());
-		//Assert.assertEquals(message.getText(), "You logged into a secure area!");
-		
-		//String message = driver.findElement(By.id("flash")).getText();					// ********** Facing issue at this point **********
+		String message = driver.findElement(By.xpath("//*[@id='flash']")).getText();
+		Assert.assertEquals(message.contains("You logged into a secure area!"), true);
 		System.out.println(message);
-		Assert.assertEquals(message, "You logged into a secure area!");					//(Actual,Expected)
 		
 		driver.quit();
 	}

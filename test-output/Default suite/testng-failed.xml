@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practiceswtesting.HammerTestCase">
+      <class name="stringhandlingmethods.StringMethods">
         <methods>
-          <include name="testHammerDetails"/>
+          <include name="testcompareTo1"/>
         </methods>
-      </class> <!-- practiceswtesting.HammerTestCase -->
+      </class> <!-- stringhandlingmethods.StringMethods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -52,8 +52,8 @@ public class HammerTestCase {
 		
 		driver.findElement(By.id("btn-add-to-cart")).click();
 		
-		//String popupMessage = driver.findElement(By.id("toast-container")).getText();		
-		//System.out.println("Message is: " + popupMessage);	
+		String popupMessage = driver.findElement(By.id("toast-container")).getText();		
+		System.out.println("Message is: " + popupMessage);	
 		
 		WebElement toastMessage = driver.findElement(By.xpath("//div[contains(@class,'toast-message') or contains(@class,'toast')]")); 		// Capture and print the text of the toast message
         String toastText = toastMessage.getText();
