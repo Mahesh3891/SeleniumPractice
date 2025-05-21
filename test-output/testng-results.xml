@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-20T20:06:43 EDT" name="Default suite" finished-at="2025-05-20T20:06:45 EDT" duration-ms="2222">
+  <suite started-at="2025-05-20T21:13:09 EDT" name="Default suite" finished-at="2025-05-20T21:13:09 EDT" duration-ms="42">
     <groups>
     </groups>
-    <test started-at="2025-05-20T20:06:43 EDT" name="Default test" finished-at="2025-05-20T20:06:45 EDT" duration-ms="2222">
+    <test started-at="2025-05-20T21:13:09 EDT" name="Default test" finished-at="2025-05-20T21:13:09 EDT" duration-ms="42">
       <class name="stringhandlingmethods.StringMethods">
-        <test-method signature="testcontains()[pri:0, instance:stringhandlingmethods.StringMethods@35d019a3]" started-at="2025-05-20T20:06:43 EDT" name="testcontains" finished-at="2025-05-20T20:06:45 EDT" duration-ms="2196" status="PASS">
+        <test-method signature="testTrim()[pri:0, instance:stringhandlingmethods.StringMethods@4c371370]" started-at="2025-05-20T21:13:09 EDT" name="testTrim" finished-at="2025-05-20T21:13:09 EDT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcontains -->
+        </test-method> <!-- testTrim -->
       </class> <!-- stringhandlingmethods.StringMethods -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
